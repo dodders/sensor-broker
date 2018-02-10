@@ -1,6 +1,9 @@
 .bash_history/
 .bash_logout/
 .ssh/
+.dbshell
+.python_history
+.sudo_as_admin_successful
 DataBroker/nohup.out
 
 # Byte-compiled / optimized / DLL files
