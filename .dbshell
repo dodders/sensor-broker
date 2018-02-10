@@ -1,0 +1,35 @@
+show dbs
+use local
+show collections
+db.startup_log.find ({})
+quit
+dbs
+db
+show dbs
+use gdtech_test
+show collections
+db.createCollection("Sensors")
+show collections
+db.Sensors.find({})
+show dbs
+gdtechdb_test.Sensors.find({})
+show dbs
+help
+use gdtechdb_test
+show collections
+db.Sensors.find({})
+show dbs
+use gdtech_test
+db.dropDatabase
+db.dropDatabase()
+show dbs
+use gdtechdb_test
+db.dropDatabase()
+show dbs
+use gdtechdb_test
+show collections
+db.Sensors.find({})
+show dbs
+use gdtechdb_prod
+show collections
+db.Sensors.find({})

@@ -1,0 +1,33 @@
+- Mosquitto MQTT installation
+
+- Installed by using ubuntu package manager. 
+- Add to package manager (this has been done and shouldnt need to be done again: 
+sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+- Update package manager repository info so it knows about updated versions of mosquitto
+sudo apt-get update
+- Install the newest version:
+sudo apt-get install mosquitto
+
+- Binaries location: 
+/usr/sbin/mosquitto
+/usr/bin/mosquitto_pub
+/usr/bin/mosquitto_sub
+/usr/bin/mosquitto_passwd
+
+- Configs location: 
+/etc/mosquitto/mosquitto.conf
+- DB location: 
+/var/lib/mosquitto/mosquitto.db
+- Logfile location: 
+/var/log/mosquitto/mosquitto.log
+
+- Start process:
+sudo /usr/sbin/mosquitto -C /etc/mosquitto/mosquitto.conf -d
+
+- Determine if the mosquitto process is running:
+ps -ef | grep mosquitto
+- Get process to reread the config file:
+sudo kill -SIGHUP PID
+- Stop process:
+sudo kill -9 PID
+
